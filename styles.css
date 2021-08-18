@@ -1,0 +1,176 @@
+/* reset */
+
+* {
+    margin: 0;
+	padding: 0; 
+}
+
+html {
+    font-size: 20px;
+}
+
+body {
+    background-color: black;
+    color: rgb(255, 255, 255);
+    opacity: .9;
+}
+
+h1 {
+    font-family: 'Fredoka One', cursive;
+    font-size: 3rem;
+}
+
+h2, h3, h4, h5 {
+    font-family: 'Cairo', sans-serif;
+    ;
+}
+
+ul, li, p, nav, figcaption, figure, footer, button, input {
+    /* font-family: 'Alegreya', serif; */
+    font-family: 'Cairo', sans-serif;
+}
+
+input{
+    font-weight: bold;
+}
+
+input, button {
+    background-color: #858b97;
+}
+
+
+/* Header */
+
+header h2 {
+    padding-left: 7%;
+}
+
+.navigation {
+    display: flex;
+    justify-content: space-around;
+}
+
+.navigation li {
+    list-style: none;
+    /* display:inline-flex;
+    padding-right: 8%; */
+}
+
+.navigation a {
+    text-decoration: none;
+    color: white;
+}
+
+/* Banner */
+.banner {
+    background-image: url(./images/ryan-hutton-Jztmx9yqjBw-unsplash.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    text-align: center;
+    height: 20rem;
+}
+
+.hero {
+    padding-top: 5rem;
+}
+
+/* About Us */
+
+.about {
+    background-image: url(./images/mike-erskine-S_VbdMTsdiA-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+    height: 26rem;
+}
+
+.about h3{
+    margin-top:10%;
+    margin-left: 8%;
+    padding-top: 3rem;
+    padding-right: 7rem;
+}
+
+@media only screen and (max-width: 760px) {
+    h3 {
+        font-size: .75rem;
+        padding: 1.25rem 0 1.85rem 0;
+    }
+    .about{
+        background-position: 0%;
+    }
+}
+
+/* Gallery */
+
+
+.gallery h2 {
+    text-align: center;
+}
+
+#gallery-section {
+    background-color: #343d52;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.image-container {
+    display: flex;
+    padding: .25rem;
+    width: 90%;
+}
+
+.photos {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.photos img {
+    max-width: 100%;
+    height: auto;
+    flex: 1;
+    padding: 2rem;
+}
+
+@media only screen and (max-width: 760px) {
+    .photos {
+        flex-flow:column;
+        padding: 0;
+    }
+}
+    
+
+
+
+/* Footer */
+footer {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 6rem;
+    background-color: #485063;
+    align-items: center;
+}
+
+.social {
+    text-align: center;
+}
+.social p{
+    padding: 0;
+}
+.social img {
+    height: 2rem;
+    width: 2rem;
+}
+
+footer p {
+    background-color: black;
+    border-radius: .5rem;
+    padding: .75rem;
+    margin-top: 1rem;
+    font-size: .625rem;
+    margin-bottom: .15rem;
+}
+
